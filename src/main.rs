@@ -3,6 +3,7 @@ mod sherlock;
 mod construct;
 mod palindromes;
 mod strings;
+mod encryption;
 
 use std::io::{self, Read};
 use crate::equal::min_operations;

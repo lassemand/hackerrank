@@ -1,7 +1,3 @@
-mod palindromes;
-
-use std::io::Read;
-
 fn suffix_array(s: &[u8]) -> Vec<usize> {
     let n = s.len();
     if n == 0 {

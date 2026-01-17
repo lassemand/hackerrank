@@ -1,5 +1,3 @@
-use std::io::Read;
-
 pub(crate) fn min_operations(a: &[i16]) -> i32 {
     let n = a.len();
     if n < 2 {
