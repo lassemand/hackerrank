@@ -2,6 +2,7 @@ mod equal;
 mod sherlock;
 mod construct;
 mod palindromes;
+mod strings;
 
 use std::io::{self, Read};
 use crate::equal::min_operations;
