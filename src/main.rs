@@ -1,5 +1,6 @@
 mod equal;
 mod sherlock;
+mod construct;
 
 use std::io::{self, Read};
 use crate::equal::min_operations;
