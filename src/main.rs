@@ -1,6 +1,7 @@
 mod equal;
 mod sherlock;
 mod construct;
+mod palindromes;
 
 use std::io::{self, Read};
 use crate::equal::min_operations;
