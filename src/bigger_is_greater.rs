@@ -13,13 +13,11 @@ fn biggerIsGreater(w: &str) -> String {
         }
         i -= 1;
     }
-    println!("i: {}", i);
     // 2) Find rightmost successor j > i such that a[j] > a[i]
     let mut j = n - 1;
     while a[j] <= a[i] {
         j -= 1;
     }
-    println!("j: {}", j);
 
     // 3) Swap pivot with successor
     a.swap(i, j);

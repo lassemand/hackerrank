@@ -5,6 +5,7 @@ mod palindromes;
 mod strings;
 mod encryption;
 mod bigger_is_greater;
+mod build_a_string;
 
 use std::io::{self, Read};
 use crate::equal::min_operations;
