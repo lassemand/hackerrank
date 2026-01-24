@@ -1,3 +1,6 @@
+use std::cmp::min;
+use std::sync::atomic::Ordering::AcqRel;
+
 fn build_string_cost(n: usize, a: i32, b: i32, s: &str) -> i32 {
     let mut dp = vec![0; n];
     dp[0] = a;
@@ -5,23 +8,27 @@ fn build_string_cost(n: usize, a: i32, b: i32, s: &str) -> i32 {
     let mut last_l = 0;
 
     for k in 1..n {
+        println!("{:?}", dp);
         dp[k] = dp[k - 1] + a;
         let mut l = last_l + 1;
-
+        println!("l: {}", l);
         while l > 0 {
             let start = k + 1 - l;
-            let cur = &s[start..=k];
             let prefix = &s[..start];
+            let needle = &s[start..=k];
+            println!("prefix: {}, needle: {}", prefix, needle);
 
-            if prefix.find(cur).is_some() {
+            if prefix.find(needle).is_some() {
                 dp[k] = dp[k].min(dp[k - l] + b);
                 break;
             } else {
-                l -= 1;
+                l -=1 ;
             }
-        }
 
+        }
         last_l = l;
+
+
     }
 
     dp[n - 1]
