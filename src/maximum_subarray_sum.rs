@@ -13,7 +13,7 @@ pub fn maximum_sum(a: &[i64], m: i64) -> i64 {
         max_mod_sum = max_mod_sum.max(cur_prefix_sum);
 
         if let Some(&higher) = prefix_set.range((cur_prefix_sum + 1)..).next() {
-            let candidate = (cur_prefix_sum - higher + m) % m;
+            let candidate = (cur_prefix_sum - higher).rem_euclid(m);
             max_mod_sum = max_mod_sum.max(candidate);
         }
 
