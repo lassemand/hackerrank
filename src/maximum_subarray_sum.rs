@@ -8,7 +8,7 @@ pub fn maximum_sum(a: &[i64], m: i64) -> i64 {
     prefix_set.insert(0);
 
     for &value in a {
-        cur_prefix_sum = (cur_prefix_sum + value % m + m) % m;
+        cur_prefix_sum = (cur_prefix_sum + value) % m;
 
         max_mod_sum = max_mod_sum.max(cur_prefix_sum);
 
@@ -68,5 +68,7 @@ mod tests {
         let m = 11;
         assert_eq!(maximum_sum(&a, m), 10);
     }
+
+
 }
 
