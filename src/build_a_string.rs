@@ -1,6 +1,3 @@
-use std::cmp::min;
-use std::sync::atomic::Ordering::AcqRel;
-
 fn build_string_cost(n: usize, a: i32, b: i32, s: &str) -> i32 {
     let mut dp = vec![0; n];
     dp[0] = a;

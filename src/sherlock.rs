@@ -1,5 +1,5 @@
-fn cost(B: &[i32]) -> i32 {
-    let n = B.len();
+fn cost(b: &[i32]) -> i32 {
+    let n = b.len();
     if n <= 1 {
         return 0;
     }
@@ -15,13 +15,13 @@ fn cost(B: &[i32]) -> i32 {
         // A[i] = 1
         dp[0] = std::cmp::max(
             prev0,
-            prev1 + (1 - B[i - 1]).abs(),
+            prev1 + (1 - b[i - 1]).abs(),
         );
 
         // A[i] = B[i]
         dp[1] = std::cmp::max(
-            prev0 + (B[i] - 1).abs(),
-            prev1 + (B[i] - B[i - 1]).abs(),
+            prev0 + (b[i] - 1).abs(),
+            prev1 + (b[i] - b[i - 1]).abs(),
         );
     }
 

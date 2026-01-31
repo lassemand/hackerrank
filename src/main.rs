@@ -1,3 +1,4 @@
+#![allow(non_snake_case)]
 mod equal;
 mod sherlock;
 mod construct;
@@ -7,6 +8,8 @@ mod encryption;
 mod bigger_is_greater;
 mod build_a_string;
 mod maximum_subarray_sum;
+mod connected_cell_in_a_grid;
+mod short_palindrome;
 
 use std::io::{self, Read};
 use crate::equal::min_operations;
