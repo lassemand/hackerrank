@@ -59,7 +59,7 @@ fn short_palindrome(s: &str) -> i64 {
             cache[i][k] = (cache[index][k]
                 + (count[index][c] as i64 - 1) * left
                 + (count[i - 1][k] - count[index][k]) as i64)
-                % MOD;
+                % MOD
         }
 
         total = (total + result[i]) % MOD;
