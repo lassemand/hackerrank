@@ -1,6 +1,3 @@
-use std::collections::{HashMap};
-
-
 const MOD: i64 = 1_000_000_007;
 
 pub fn kingdom_division(n: i32, roads: &[Vec<i32>]) -> i32 {
