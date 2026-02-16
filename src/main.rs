@@ -11,6 +11,10 @@ mod maximum_subarray_sum;
 mod connected_cell_in_a_grid;
 mod short_palindrome;
 mod organizing_containers;
+mod kaprekar_numbers;
+mod kingdom_division;
+mod fibonacci_modified;
+mod abbrevation;
 
 use std::io::{self, Read};
 use crate::equal::min_operations;

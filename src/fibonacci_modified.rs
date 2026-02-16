@@ -123,8 +123,6 @@ mod tests {
 
     #[test]
     fn single_node() {
-        let n = 1;
-        let roads: Vec<Vec<i32>> = vec![];
         assert_eq!(fibonacci_modified(0, 1, 6), "27");
     }
 }
