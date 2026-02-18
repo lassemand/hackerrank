@@ -23,7 +23,6 @@ pub fn abbreviation(a: &str, b: &str) -> String {
                 dp[j] = false;
             }
         }
-        println!("dp: {:?}", dp);
 
         max_j = new_max;
     }
