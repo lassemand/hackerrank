@@ -16,6 +16,7 @@ mod kingdom_division;
 mod fibonacci_modified;
 mod abbrevation;
 mod sam_and_substrings;
+mod prime_xor;
 
 use std::io::{self, Read};
 use crate::equal::min_operations;
