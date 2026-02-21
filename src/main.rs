@@ -17,6 +17,9 @@ mod fibonacci_modified;
 mod abbrevation;
 mod sam_and_substrings;
 mod prime_xor;
+mod diagonal_difference;
+mod mini_max_sum;
+mod divisible_sum_pairs;
 
 use std::io::{self, Read};
 use crate::equal::min_operations;
