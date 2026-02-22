@@ -32,59 +32,59 @@ pub fn abbreviation(a: &str, b: &str) -> String {
 
 #[cfg(test)]
 mod tests {
-    use super::*;
+use super::*;
 
-    #[test]
-    fn test_1() {
-        assert_eq!(abbreviation("daBcd", "ABC"), "YES")
-    }
+#[test]
+fn test_1() {
+    assert_eq!(abbreviation("daBcd", "ABC"), "YES")
+}
 
-    #[test]
-    fn test_2() {
-        assert_eq!(abbreviation("AbcDE", "ABDE"), "YES")
-    }
+#[test]
+fn test_2() {
+    assert_eq!(abbreviation("AbcDE", "ABDE"), "YES")
+}
 
-    #[test]
-    fn test_3() {
-        assert_eq!(abbreviation("AbcDE", "AFDE"), "NO")
-    }
+#[test]
+fn test_3() {
+    assert_eq!(abbreviation("AbcDE", "AFDE"), "NO")
+}
 
-    #[test]
-    fn test_4() {
-        assert_eq!(abbreviation("abc", "A"), "YES")
-    }
+#[test]
+fn test_4() {
+    assert_eq!(abbreviation("abc", "A"), "YES")
+}
 
-    #[test]
-    fn test_5() {
-        assert_eq!(abbreviation("abc", "BB"), "NO")
-    }
+#[test]
+fn test_5() {
+    assert_eq!(abbreviation("abc", "BB"), "NO")
+}
 
-    #[test]
-    fn test_6() {
-        assert_eq!(abbreviation("abc", "D"), "NO")
-    }
+#[test]
+fn test_6() {
+    assert_eq!(abbreviation("abc", "D"), "NO")
+}
 
-    #[test]
-    fn test_7() {
-        assert_eq!(abbreviation("aA", "A"), "YES")
-    }
+#[test]
+fn test_7() {
+    assert_eq!(abbreviation("aA", "A"), "YES")
+}
 
-    #[test]
-    fn test_8() {
-        assert_eq!(abbreviation("aBcD", "AB"), "NO")
-    }
-    #[test]
-    fn test_9() {
-        assert_eq!(abbreviation("ZGW", "ZG"), "NO")
-    }
+#[test]
+fn test_8() {
+    assert_eq!(abbreviation("aBcD", "AB"), "NO")
+}
+#[test]
+fn test_9() {
+    assert_eq!(abbreviation("ZGW", "ZG"), "NO")
+}
 
-    #[test]
-    fn test_10() {
-        assert_eq!(abbreviation("ZGAwZGB", "ZGB"), "NO")
-    }
+#[test]
+fn test_10() {
+    assert_eq!(abbreviation("ZGAwZGB", "ZGB"), "NO")
+}
 
-    #[test]
-    fn test_11() {
-        assert_eq!(abbreviation("ab", "AB"), "YES")
-    }
+#[test]
+fn test_11() {
+    assert_eq!(abbreviation("ab", "AB"), "YES")
+}
 }

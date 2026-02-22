@@ -21,6 +21,9 @@ mod diagonal_difference;
 mod mini_max_sum;
 mod divisible_sum_pairs;
 mod bon_appetit;
+mod fair_cut;
+mod apples_and_oranges;
+mod rust_in_words;
 
 use std::io::{self, Read};
 use crate::equal::min_operations;
