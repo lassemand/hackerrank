@@ -20,6 +20,7 @@ mod prime_xor;
 mod diagonal_difference;
 mod mini_max_sum;
 mod divisible_sum_pairs;
+mod bon_appetit;
 
 use std::io::{self, Read};
 use crate::equal::min_operations;
