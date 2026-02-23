@@ -23,7 +23,9 @@ mod divisible_sum_pairs;
 mod bon_appetit;
 mod fair_cut;
 mod apples_and_oranges;
-mod rust_in_words;
+mod staircase;
+mod plus_minus;
+mod get_total_x;
 
 use std::io::{self, Read};
 use crate::equal::min_operations;
