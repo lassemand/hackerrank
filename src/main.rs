@@ -26,6 +26,7 @@ mod apples_and_oranges;
 mod staircase;
 mod plus_minus;
 mod get_total_x;
+mod migratory_birds;
 
 use std::io::{self, Read};
 use crate::equal::min_operations;

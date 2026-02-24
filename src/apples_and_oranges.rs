@@ -1,3 +1,4 @@
+#[allow(dead_code)]
 fn count_apples_and_oranges(s: i32, t: i32, a: i32, b: i32, apples: &[i32], oranges: &[i32]) {
     let mut apple_count = 0;
     let mut orange_count = 0;

@@ -1,3 +1,4 @@
+#[allow(dead_code)]
 fn gcd(mut a: u32, mut b: u32) -> u32 {
     while b != 0 {
         let temp = b;
@@ -6,11 +7,12 @@ fn gcd(mut a: u32, mut b: u32) -> u32 {
     }
     a
 }
-
+#[allow(dead_code)]
 fn lcm(a: u32, b: u32) -> u32 {
     a / gcd(a, b) * b
 }
 
+#[allow(dead_code)]
 fn get_total_x(a: &[u32], b: &[u32]) -> i32 {
     if a.is_empty() || b.is_empty() {
         return 0;
