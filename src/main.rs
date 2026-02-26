@@ -27,6 +27,8 @@ mod staircase;
 mod plus_minus;
 mod get_total_x;
 mod migratory_birds;
+mod kangaroo;
+mod rust_in_words;
 
 use std::io::{self, Read};
 use crate::equal::min_operations;
