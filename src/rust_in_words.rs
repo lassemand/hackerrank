@@ -1,5 +1,3 @@
-use std::fmt::format;
-
 fn number_to_str(v: i32) -> String {
     match v {
         1 => "one",
