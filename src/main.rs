@@ -30,6 +30,7 @@ mod migratory_birds;
 mod kangaroo;
 mod rust_in_words;
 mod maxsubarray;
+mod xor_and_sum;
 
 use std::io::{self, Read};
 use crate::equal::min_operations;
