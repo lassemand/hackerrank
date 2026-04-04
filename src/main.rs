@@ -31,6 +31,8 @@ mod kangaroo;
 mod rust_in_words;
 mod maxsubarray;
 mod xor_and_sum;
+mod hr_city;
+mod non_divisible_subset;
 
 use std::io::{self, Read};
 use crate::equal::min_operations;

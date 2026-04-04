@@ -49,11 +49,12 @@ fn xor_and_sum(mut a: String, b: String) -> i64 {
             (cache[0][1] + ((bit ^ 1) * two_power[i]) % MOD) % MOD;
     }
 
+    // ---- main loop over b ----
     for i in 0..b.len() {
         let bbit = (b_bytes[b.len() - 1 - i] - b'0') as usize;
 
         result = (result + cache[i][bbit]) % MOD;
-        i result < 0 {
+        if result < 0 {
             result += MOD;
         }
 
